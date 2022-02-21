@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>iPhone-Calculator | Tailwind CSS </title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Calculator Header Section  -->
+    <header>
+        
+    </header>
+
+    <!-- Calculator Section started here  -->
+    <main class="calculator w-full max-w-sm mx-auto md:items-center">
+        <!-- Topbar Time Section Started -->
+        <div class="top-container justify-center items-start">
+            <div class="clock">
+              <span class="hour"></span>:<span class="minute"></span>
+            </div>
+          </div>
+        <!-- Topbar Time Section Ended  -->
+        <div class="flex justify-center items-center ">
+            <div class="p-2 shadow-white rounded-xl">
+                <p id="outputScreen"
+                    class="mb-5 p-5 font-extrabold rounded-xl text-white bg-black text-right"></p>
+                <div class="grid grid-cols-4 gap-4">
+                    <button class="rounded-full border-solid border-gray-500 bg-slate-300 p-4"
+                        onclick="clr()">C</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-slate-300 p-4"
+                        onclick="del()">Del</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-slate-300 p-4"
+                        onclick="display('%')">%</button>
+                    <button class="rounded-full text-white border-solid border-gray-500 bg-amber-500 p-4"
+                        onclick="display('/')">÷</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('7')">7</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('8')">8</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('9')">9</button>
+                    <button class="rounded-full text-white border-solid border-gray-500 bg-amber-500 p-4"
+                        onclick="display('*')">×</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('4')">4</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('5')">5</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('6')">6</button>
+                    <button class="rounded-full text-white border-solid border-gray-500 bg-amber-500 p-4"
+                        onclick="display('-')">-</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('1')">1</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('2')">2</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white px-2"
+                        onclick="display('3')">3</button>
+                    <button class="rounded-full text-white border-solid border-gray-500 bg-amber-500 p-4"
+                        onclick="display('+')">+</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white p-4 col-span-2"
+                        onclick="display('0')">0</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-zinc-800 text-white p-4"
+                        onclick="display('.')">.</button>
+                    <button class="rounded-full border-solid border-gray-500 bg-amber-500 text-white p-4"
+                        onclick="calc()">=</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom"></div>
+    </main>
+    <!-- calculator section end  -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>
